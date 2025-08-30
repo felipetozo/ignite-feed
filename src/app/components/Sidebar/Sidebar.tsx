@@ -10,17 +10,27 @@ function Sidebar() {
                 width={800}
                 height={300}
                 alt="Ignite Feed"
+                className={styles.cover}
             />
 
             <div className={styles.profile}>
-                <strong>Diego Fernandes</strong>
-                <span>Web Developer</span>
+                <Image
+                    src="/avatar005.jpg"
+                    width={120}
+                    height={120}
+                    alt="Profile Picture"
+                    className={styles.profilePicture}
+                />
+                <p>
+                    <strong>Shakira O'Neall</strong>
+                    <span>Web Developer</span>
+                </p>
             </div>
 
             <footer>
                 <a href="/">
-                <LiaUserEditSolid />
-                Editar seu perfil
+                    <LiaUserEditSolid />
+                    Editar seu perfil
                 </a>
             </footer>
         </aside>
