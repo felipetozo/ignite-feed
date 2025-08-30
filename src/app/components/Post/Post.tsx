@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import styles from './Post.module.css';
 import Link from 'next/link';
+import { LiaCommentMedicalSolid } from "react-icons/lia";
+
 
 function Post() {
     return (
@@ -31,6 +33,20 @@ function Post() {
                 <p>👉 <Link href="/">jane.design/doctorcare</Link></p>
                 <p>#novoprojeto #nlw #rocketseat</p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+                <textarea
+                placeholder="Deixe um comentário"
+                />
+
+                <footer>
+                    <button type="submit">
+                        <LiaCommentMedicalSolid />
+                        Comentar
+                    </button>
+                </footer>
+            </form>
         </article>
     );
 };
