@@ -1,8 +1,7 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import styles from './Avatar.module.css';
 import Image from 'next/image';
 
-function Avatar(props: { src: string | StaticImport; hasBorder: any; }) {
+function Avatar(props: { src: string, hasBorder: any; }) {
     return (
         <Image
             src={props.src}
