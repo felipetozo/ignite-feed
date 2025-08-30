@@ -1,7 +1,7 @@
 import styles from './Avatar.module.css';
 import Image from 'next/image';
 
-function Avatar(props: { src: string, hasBorder: any; }) {
+function Avatar(props: { src: string, hasBorder: boolean; }) {
     return (
         <Image
             src={props.src}
