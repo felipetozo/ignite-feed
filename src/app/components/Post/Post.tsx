@@ -2,7 +2,12 @@ import Image from 'next/image';
 import styles from './Post.module.css';
 import Link from 'next/link';
 
-function Post() {
+interface PostProps {
+    author: string;
+    content: string;
+}
+
+function Post({ author, content }: PostProps) {
     return (
         <article className={styles.post}>
             <header>
@@ -15,7 +20,7 @@ function Post() {
                         className={styles.avatar}
                     />
                     <div className={styles.authorInfo}>
-                        <strong>Diego Fernandes</strong>
+                        <strong>{author}</strong>
                         <span>Web Developer</span>
                     </div>
                 </div>
@@ -26,10 +31,7 @@ function Post() {
             </header>
 
             <div className={styles.content}>
-                <p>Fala galeraa 👋</p>
-                <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
-                <p>👉 <Link href="/">jane.design/doctorcare</Link></p>
-                <p>#novoprojeto #nlw #rocketseat</p>
+                <p>{content}</p>
             </div>
         </article>
     );
