@@ -1,5 +1,6 @@
 import styles from './Sidebar.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import { LiaUserEditSolid } from "react-icons/lia";
 
 function Sidebar() {
@@ -28,10 +29,10 @@ function Sidebar() {
             </div>
 
             <footer>
-                <a href="/">
+                <Link href="/">
                     <LiaUserEditSolid />
                     Editar seu perfil
-                </a>
+                </Link>
             </footer>
         </aside>
     );
