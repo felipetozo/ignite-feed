@@ -3,6 +3,7 @@ import styles from './Post.module.css';
 import Link from 'next/link';
 import { LiaCommentMedicalSolid } from "react-icons/lia";
 import Comment from '../Comment/Comment';
+import Avatar from '../Avatar/Avatar';
 
 
 function Post() {
@@ -10,12 +11,9 @@ function Post() {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Image
+                    <Avatar
+                        hasBorder={true}
                         src="/avatar001.jpg"
-                        width={120}
-                        height={120}
-                        alt="Author Profile"
-                        className={styles.avatar}
                     />
                     <div className={styles.authorInfo}>
                         <strong>Diego Fernandes</strong>

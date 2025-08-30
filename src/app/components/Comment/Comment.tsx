@@ -1,17 +1,12 @@
 import { TiTrash } from 'react-icons/ti';
 import styles from './Comment.module.css';
-import Image from 'next/image';
 import { LiaThumbsUp } from 'react-icons/lia';
+import Avatar from '../Avatar/Avatar';
 
 function Comment() {
     return (
         <div className={styles.comment}>
-            <Image
-                src="/avatar002.jpg"
-                alt="Ignite Feed Avatar 03"
-                width={32}
-                height={32}
-            />
+            <Avatar hasBorder={false} src="/avatar002.jpg" />
 
             <div className={styles.commentBox}>
                 <div className={styles.commentContent}>

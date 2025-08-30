@@ -21,12 +21,13 @@
     gap: 1rem;
 }
 
-.profilePicture {
+.profile img {
     display: flex;
     position: relative;
     left: 50%;
+    width: 5rem;
+    height: 5rem;
     transform: translate(-50%, -1rem);
-    border: 2px solid var(--green-500);
     overflow: hidden;
     border-radius: 0.25rem;
 }

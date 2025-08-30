@@ -1,6 +1,7 @@
 import styles from './Sidebar.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import Avatar from '@/app/components/Avatar/Avatar';
 import { LiaUserEditSolid } from "react-icons/lia";
 
 function Sidebar() {
@@ -15,12 +16,9 @@ function Sidebar() {
             />
 
             <div className={styles.profile}>
-                <Image
+                <Avatar
+                    hasBorder={true}
                     src="/avatar005.jpg"
-                    width={120}
-                    height={120}
-                    alt="Profile Picture"
-                    className={styles.profilePicture}
                 />
                 <p>
                     <strong>Shakira O&#39;Neall</strong>
