@@ -23,7 +23,7 @@ function Sidebar() {
                     className={styles.profilePicture}
                 />
                 <p>
-                    <strong>Shakira O'Neall</strong>
+                    <strong>Shakira O&#39;Neall</strong>
                     <span>Web Developer</span>
                 </p>
             </div>
