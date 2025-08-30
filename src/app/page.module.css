@@ -1,11 +1,18 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    width: 75%;
+    grid-template-columns: 1fr;
+    width: 90%;
     justify-content: center;
     gap: 2rem;
     align-items: flex-start;
     margin: 0 auto;
     padding: 2rem 1rem;
     max-width: 1440px;
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        grid-template-columns: 300px 1fr;
+        width: 75%;
+    }
 }
