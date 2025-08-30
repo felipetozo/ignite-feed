@@ -11,12 +11,8 @@ function Home() {
           <Sidebar />
           <main>
             <Post
-              author="Diego Fernandes"
-              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio aliquam."
             />
             <Post
-              author="Gabriel Buzzi"
-              content="Um novo post muito legal"
             />
           </main>
       </div>
