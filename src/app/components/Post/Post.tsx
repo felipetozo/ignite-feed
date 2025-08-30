@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './Post.module.css';
 import Link from 'next/link';
 import { LiaCommentMedicalSolid } from "react-icons/lia";
+import Comment from '../Comment/Comment';
 
 
 function Post() {
@@ -47,6 +48,12 @@ function Post() {
                     </button>
                 </footer>
             </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+            </div>
         </article>
     );
 };
